@@ -1,0 +1,334 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navigation styles */
+nav {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #646cff;
+  text-decoration: inherit;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #535bf2;
+}
+
+/* Signup page styles */
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.signup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 300px;
+}
+
+.option-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.option-card.selected {
+  background-color: white;
+  border: 1px solid #0095ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-button.active {
+  border-color: #ff5252;
+}
+
+.inner-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff5252;
+  display: none;
+}
+
+.radio-button.active .inner-circle {
+  display: block;
+}
+
+.continue-button {
+  width: 100%;
+  max-width: 340px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Vendor Signup Form Styles */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.vendor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: left;
+  color: #555;
+}
+
+/* Required field indicator */
+.form-group label.required::after {
+  content: "*";
+  color: #ff4d4f;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0095ff;
+  box-shadow: 0 0 0 2px rgba(0, 149, 255, 0.1);
+}
+
+.field-error {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.success-message {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #52c41a;
+}
+
+.error-message {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #ff4d4f;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 12px 25px;
+  border-radius: 6px;
+  background-color: #ff5252;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ffb0b0;
+  cursor: not-allowed;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 500px) {
+  .signup-container {
+    padding: 15px;
+  }
+  
+  .signup-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  
+  .option-card {
+    max-width: 100%;
+  }
+  
+  .continue-button {
+    max-width: 100%;
+  }
+  
+  .form-container {
+    padding: 15px;
+  }
+  
+  .form-section {
+    padding: 15px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+  
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .back-button,
+  .submit-button {
+    width: 100%;
+  }
+}
+
+/* Login link on signup page */
+.login-link {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #ff505f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
