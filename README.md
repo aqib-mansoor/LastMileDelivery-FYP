@@ -1,5 +1,5 @@
 
-# Last Mile Delivery System (LMDS)  - React + Vite
+# Last Mile Delivery System   - (Frontend) React + Vite
   
 
 A smarter, faster, and more convenient way to get **everything delivered**—whether it’s food, groceries, medicines, or even personal packages.  
